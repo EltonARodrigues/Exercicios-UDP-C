@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1459969112 source:/home/elton/UDPclient/main.cpp
+	<windows.h>
+	<winsock.h>
+	<stdio.h>
+	<stdlib.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<string.h>
+	<arpa/inet.h>
+	<unistd.h>
+
