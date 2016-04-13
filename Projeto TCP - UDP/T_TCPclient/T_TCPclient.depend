@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1460497186 source:/home/elton/Documentos/Redes/Exercicios-UDP e TCP - C/T_TCPclient/main.cpp
+	<windows.h>
+	<winsock.h>
+	<stdio.h>
+	<stdlib.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<string.h>
+	<arpa/inet.h>
+	<unistd.h>
+

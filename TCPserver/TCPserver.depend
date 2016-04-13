@@ -1,0 +1,27 @@
+# depslib dependency file v1.0
+1460033894 source:/home/elton/Documentos/Redes/Exercicios-UDP-C/TCPserver/main.cpp
+	<winsock.h>
+	<windows.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<arpa/inet.h>
+	<unistd.h>
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<iostream>
+
+1460033894 source:/home/elton/Documentos/Redes/Exercicios-UDP e TCP - C/TCPserver/main.cpp
+	<winsock.h>
+	<windows.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<arpa/inet.h>
+	<unistd.h>
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<iostream>
+

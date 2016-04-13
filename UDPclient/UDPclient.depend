@@ -11,3 +11,15 @@
 	<arpa/inet.h>
 	<unistd.h>
 
+1460026800 source:/home/elton/Documentos/Redes/Exercicios-UDP e TCP - C/UDPclient/main.cpp
+	<windows.h>
+	<winsock.h>
+	<stdio.h>
+	<stdlib.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<string.h>
+	<arpa/inet.h>
+	<unistd.h>
+

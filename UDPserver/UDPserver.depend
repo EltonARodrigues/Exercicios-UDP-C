@@ -12,3 +12,29 @@
 	<string.h>
 	<unistd.h>
 
+1459986180 source:/home/elton/Documentos/Redes/Exercicios-UDP-C/UDPserver/main.cpp
+	<windows.h>
+	<winsock.h>
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<arpa/inet.h>
+	<string.h>
+	<unistd.h>
+
+1460037267 source:/home/elton/Documentos/Redes/Exercicios-UDP e TCP - C/UDPserver/main.cpp
+	<windows.h>
+	<winsock.h>
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<arpa/inet.h>
+	<string.h>
+	<unistd.h>
+

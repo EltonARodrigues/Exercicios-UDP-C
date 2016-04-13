@@ -96,7 +96,7 @@ int main(int argc, char *argv[])
     for (int indx=0; indx<100 && msg[indx-1] != 0xA; indx++){ msg[indx] = toupper(msg[indx]);}
 
     n = sendto(sd, msg, MAX_MSG, 0,(struct sockaddr *) &client,sizeof(server));
-    printf("-->Enviando Resposta....");
+    printf("-->Resposta Enviada....\n\n\n");
 
     }
 
