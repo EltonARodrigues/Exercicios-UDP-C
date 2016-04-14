@@ -1,3 +1,7 @@
+/*
+ Proxy UDP/TCP
+ Elton de Andrade Rodrigues RA: 00079714
+ */
 #define LINUX
 
 #ifdef WINDOWS
@@ -6,7 +10,6 @@
 #endif
 
 #include <stdlib.h>
-//#include <stdio.h>
 #include <string.h>
 #include <iostream>
 

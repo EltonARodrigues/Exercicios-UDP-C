@@ -1,3 +1,7 @@
+/*
+ Client UDP
+ Elton de Andrade Rodrigues RA: 00079714
+ */
 #define LINUX
 
 #ifdef WINDOWS
@@ -39,7 +43,7 @@ int main(int argc, char** argv)
     socklen_t fromlen;
 #endif
 
-    struct sockaddr_in server, client;
+    struct sockaddr_in proxy, client;
     SOCKET connect_socket;
 
 #ifdef WINDOWS
@@ -55,9 +59,9 @@ int main(int argc, char** argv)
         cout << "Server: WSAStartup() is OK." << endl;
 #endif
 
-    server.sin_family = AF_INET;
-    server.sin_addr.s_addr = inet_addr(IPADDRESS);
-    server.sin_port = htons(DEFAULT_PORT);
+    proxy.sin_family = AF_INET;
+    proxy.sin_addr.s_addr = inet_addr(IPADDRESS);
+    proxy.sin_port = htons(DEFAULT_PORT);
 
     connect_socket = socket(AF_INET, SOCK_STREAM, 0);
 
@@ -69,7 +73,7 @@ int main(int argc, char** argv)
     else
         cout << "Client: socket() is OK." << endl;
 
-    if (connect(connect_socket, (struct sockaddr*) &server, sizeof (server)) < 0)
+    if (connect(connect_socket, (struct sockaddr*) &proxy, sizeof (proxy)) < 0)
     {
         cout << "Client: connect() failed\n" << endl;
         exit(-2);

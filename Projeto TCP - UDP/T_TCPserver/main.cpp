@@ -1,7 +1,6 @@
 /*
-
  Servidor TCP
-
+ Elton de Andrade Rodrigues RA: 00079714
  */
 #define LINUX
 
@@ -31,14 +30,19 @@
 
 using namespace std;
 
-void strupr(char str[])
-{
-    int indx = 0;
-    for (; indx < MAX_SIZE; indx++)
-    {
-        if (str[indx] <= 122 && str[indx] >= 97)
-            str[indx] = (char)(((int)str[indx]) - 32);
+char *invertstring(char Buffer_inv[MAX_SIZE]){
+    char auxiliar[MAX_SIZE];
+    int a,b;
+
+    b = strlen(Buffer_inv)-1;
+
+    for(a=0;Buffer_inv[a]!='\0';a++){
+        auxiliar[b]=Buffer_inv[a];
+        b--;
     }
+    auxiliar[a]='\0';
+    strcpy(Buffer_inv,auxiliar);
+    return Buffer_inv;
 }
 
 int main(int argc, char **argv)
@@ -47,7 +51,8 @@ int main(int argc, char **argv)
     int retval;
 #ifdef WINDOWS
     int fromlen;
-#else
+#endif
+#ifdef LINUX
     socklen_t fromlen;
 #endif
 
@@ -141,27 +146,8 @@ int main(int argc, char **argv)
         cout << "Server: Received " << retval << " bytes" << endl;
         cout << "Data: " << Buffer << endl;
 
-        //codigo para inverter string
-        char auxiliar[50];
-        int a,b;
-
-        b = strlen(Buffer)-1;
-        //strlen calcula a quantidade de caracteres que tem a string
-        for(a=0;Buffer[a]!='\0';a++){        //Repete enquanto nao chegar ao final da string
-        auxiliar[b]=Buffer[a];
-        b--;
-        }
-        auxiliar[a]='\0';      //Se nao colocar essa parte, o programa pode mostrar LIXO
-        strcpy(Buffer,auxiliar);    //Copia para a variável string o conteúdo da variável auxiliar
-        printf("\nResposta: %s\n",Buffer);
-        // fim do codigo de inversao de string
-
-        printf("Server: Enviando nova string para o proxy...\n");
-        strupr(Buffer);
-
+        invertstring(Buffer);
         retval = send(msgsock, Buffer, sizeof (Buffer), 0);
-
-
 
         if (retval < 0)
         {

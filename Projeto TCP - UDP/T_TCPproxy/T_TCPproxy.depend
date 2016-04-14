@@ -14,3 +14,18 @@
 	<arpa/inet.h>
 	<unistd.h>
 
+1460596678 source:/home/elton/Documentos/Redes/Exercicios-UDP e TCP - C/Projeto TCP - UDP/T_TCPproxy/main.cpp
+	<windows.h>
+	<winsock.h>
+	<stdlib.h>
+	<string.h>
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<string.h>
+	<arpa/inet.h>
+	<unistd.h>
+
